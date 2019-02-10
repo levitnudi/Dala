@@ -1,2 +1,2 @@
 # Dala
-OPEN DATA
+OPEN DATA that you can trust; from Governments, NGOs, Private Companies...
