@@ -1,11 +1,11 @@
 # OPEN DATA API
 OPEN DATA that you can trust; from Governments, NGOs, Private Companies...
 
-The main opportunities website is found here [AfriRise.com](www.afririse.com)
+The main opportunities website is found here [AfriRise.com](https://www.afririse.com)
 
 ## The API will include :
 * Facebook messenger (chatbot) api
-* WhatsApp messenger api, see example app on [Google PlayStore](https://www.google.com)
+* WhatsApp messenger api, see example app on [Google PlayStore](https://play.google.com/store/apps/details?id=com.levitnudi.busychat)
 
 
 
