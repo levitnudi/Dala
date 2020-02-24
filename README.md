@@ -7,6 +7,10 @@ The main opportunities website is found here [AfriRise.com](https://www.afririse
 * Facebook messenger (chatbot) api
 * WhatsApp messenger api, see example app on [Google PlayStore](https://play.google.com/store/apps/details?id=com.levitnudi.busychat)
 
+## AfriRise Android App :
+* Android Rss Reader (source code)
+* Sample Application [Google PlayStore](https://play.google.com/store/apps/details?id=yali.org)
+
 
 
          Copyright 2019 Levit Nudi
