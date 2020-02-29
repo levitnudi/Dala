@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="#BDBDBD"
+                android:padding="10dp"
+                android:text="@string/title_3" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BDBDBD"
+                android:typeface="serif"
+                android:textSize="15dp"
+                android:layout_gravity="start"
+                android:text="Paste your adf.ly account ID" />
+
+            <EditText
+                android:id="@+id/refLink1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="your referral link"
+                android:textColor="@android:color/white"
+                android:gravity="start"
+                android:textColorHint="@color/transparent_white_hex_11"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:text="Paste your referee's adf.ly ID"
+                android:textColor="#BDBDBD"
+                android:textSize="15dp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/refLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="blank if none"
+                android:textColor="@android:color/white"
+                android:gravity="start"
+                android:textColorHint="@color/transparent_white_hex_11"/>
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:background="@color/dark_background"
+                android:text="SAVE"
+                android:textColor="@color/bluePrimary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btnOptOut"
+                android:background="@color/dark_background"
+                android:text="OPT OUT OF ADF.LY"
+                android:textColor="@color/bluePrimary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+            <TextView
+                android:id="@+id/termsAdfly"
+                android:text="@string/disclaimer"
+                android:gravity="center_horizontal"
+                android:textColor="#BDBDBD"
+                android:linksClickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

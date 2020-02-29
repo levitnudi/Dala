@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    //buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "yali.org"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 75
+        versionName "7.5"
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    lintOptions {
+        // if true, stop the gradle build if errors are found
+        abortOnError true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //Properties properties = new Properties()
+    //properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+/*    signingConfigs {
+        debug {
+            if (properties.getProperty("KEYSTORE_PATH") != null) {
+                storeFile file(properties.getProperty("KEYSTORE_PATH"))
+                storePassword properties.getProperty("KEYSTORE_PASSWORD")
+                keyAlias properties.getProperty("KEY_ALIAS")
+                keyPassword properties.getProperty("KEY_PASSWORD")
+            }
+        }
+        release {
+            if (properties.getProperty("KEYSTORE_PATH") != null) {
+                storeFile file(properties.getProperty("KEYSTORE_PATH"))
+                storePassword properties.getProperty("KEYSTORE_PASSWORD")
+                keyAlias properties.getProperty("KEY_ALIAS")
+                keyPassword properties.getProperty("KEY_PASSWORD")
+            }
+            keyAlias '2Show'
+            keyPassword 'newnoton2017'
+            storeFile file('C:/Users/Hi/Documents/MYPLAYSTOREAPPKEYS/2show.jks')
+            storePassword 'newnoton2017'
+        }
+    }*/
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+        }
+        /* config {
+        }*/
+    }
+}
+
+repositories {
+    maven {
+        url 'http://dl.bintray.com/amulyakhare/maven'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation files('libs/android-async-http-1.4.4.jar')
+    implementation files('libs/gson-2.2.2.jar')
+    implementation files('libs/volley.jar')
+    implementation('com.android.support:appcompat-v7:28.0.0') {}
+    implementation('com.android.support:design:28.0.0') {}
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-annotations:28.0.0' // Required Dependency by Audience Network SDK
+    implementation 'com.facebook.android:audience-network-sdk:5.+'
+    implementation 'com.google.android.gms:play-services-gcm:11.8.0'
+    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    implementation 'org.jsoup:jsoup:+'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.melnykov:floatingactionbutton:+'
+    //implementation 'com.squareup.picasso:picasso:+'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:+'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.9.1'
+    implementation 'com.crowdfire.cfalertdialog:cfalertdialog:1.1.0'
+    implementation 'com.github.iammert:MaterialIntroView:1.6.0'
+    //implementation 'com.github.Cutta:GifView:1.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //awesomewebview
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.thefinestartist:utils:0.9.0'
+    annotationProcessor 'com.thefinestartist:compilers:0.9.0'
+
+}
+
+
+
+apply plugin: 'com.google.gms.google-services'

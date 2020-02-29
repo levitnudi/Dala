@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_theme_color_primary">#03A9F4</color>
+    <color name="light_theme_color_primary_dark">#0288D1</color>
+    <color name="dark_theme_color_primary">#0288D1</color>
+    <color name="dark_theme_color_primary_dark">#0288D1</color>
+    <color name="dark_background">#FF202020</color>
+    <color name="dark_header">#0288D1</color>
+    <color name="light_theme_color_unread">#607D8B</color>
+    <color name="light_theme_color_read">#9e9e9e</color>
+    <color name="dark_theme_color_unread">#ffffff</color>
+    <color name="dark_theme_color_read">#9e9e9e</color>
+
+   <!-- <color name="light_theme_color_primary">#FFC107</color>
+    <color name="light_theme_color_primary_dark">#FF9800</color>
+    <color name="dark_theme_color_primary">#FFA000</color>
+    <color name="dark_theme_color_primary_dark">#FF9800</color>
+    <color name="dark_background">#FF202020</color>
+    <color name="dark_header">#FF9800</color>
+    <color name="light_theme_color_unread">#607D8B</color>
+    <color name="light_theme_color_read">#9e9e9e</color>
+    <color name="dark_theme_color_unread">#ffffff</color>
+    <color name="dark_theme_color_read">#9e9e9e</color>-->
+
+
+    <color name="primary">#FFC107</color>
+    <color name="primary_dark">#FFA000</color>
+    <color name="primary_light">#FFECB3</color>
+    <color name="accent">#FF9800</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
+
+
+    <!--AwesomeWebview-->
+
+    <color name="finestGray10">#1AD2D2D2</color>
+    <color name="finestGray20">#33D2D2D2</color>
+
+    <color name="finestBlack10">#1A202020</color>
+    <color name="finestBlack30">#4D202020</color>
+
+    <color name="finestWhite">#FFFFFF</color>
+    <color name="finestBlack">#000000</color>
+    <color name="finestSilver">#A5A5A5</color>
+    <color name="finestGray">#E7E7E7</color>
+
+
+    <color name="bluePrimaryDark">#048BFE</color>
+    <color name="bluePrimary">#2199FF</color>
+    <color name="bluePrimaryLight">#BADFFF</color>
+
+<!--    <color name="finestGray10">#1AD2D2D2</color>
+    <color name="finestGray20">#33D2D2D2</color>
+
+    <color name="finestBlack10">#1A202020</color>
+    <color name="finestBlack30">#4D202020</color>
+
+    <color name="finestWhite">#FFFFFF</color>
+    <color name="finestBlack">#000000</color>
+    <color name="finestSilver">#A5A5A5</color>
+    <color name="finestGray">#E7E7E7</color>-->
+
+
+   <!-- <color name="bluePrimaryDark">#FFA000</color>
+    <color name="bluePrimary">#FF9800</color>
+    <color name="bluePrimaryLight">#FF9800</color>-->
+</resources>

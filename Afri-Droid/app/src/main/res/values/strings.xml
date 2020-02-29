@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright (c) 2012-2015 Frederic Julian
+ Copyright (c) 2010-2012 Stefan Handschuh
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditionsF:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+-->
+<resources>
+
+    <!-- GENERAL -->
+    <string name="app_name">AfriRise</string>
+    <string name="about_flym">About AfriRise</string>
+    <string name="powered_note">Powered by CodeInn, AfriRise&#8482;</string>
+    <string name="never">never</string>
+    <string name="update">Update</string>
+    <string name="colon">:\u00A0</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="flym_feeds">AfriRise</string>
+    <string name="error">Error</string>
+    <string name="network_error">The network is not set up</string>
+    <string name="loading">Loading…</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="afririse_intro">Keep up with the latest opportunities, or start earning with AfriRise, go to settings. Thank you for choosing AfriRise, we inform, we arise, together...</string>
+
+    <!--help-->
+    <string name="welcome_note">Did you know that you can make money by just clicking on links? The more the clicks and referrals the more money you will make. Learn more...</string>
+    <string name="title_1">Start Earning</string>
+    <string name="title_2">Sign Up On AdFly</string>
+    <string name="welcome_2">Make every click in this app count. Start earning from every click on article links. If you don\'t have an account, </string>
+    <string name="title_3">Account ID (Read DISCLAIMER)</string>
+    <string name="title_4">Boost Your Earnings</string>
+    <string name="welcome_4">Earn more from referrals. Gain lifetime earnings every time your friends click links inside this App. Download Adf.ly mobile app and start monitoring your revenue!</string>
+    <string name="disclaimer">DISCLAIMER : Only put your adf.ly account ID and your referee\'s ID or leave blank if you have no referee.
+         An account ID refers to the digits found at the tail end of your referral link e.g 21012519 in case of https://join-adf.ly/21012519.
+        A referee is anyone who introduced you to this app by invitation.
+        Do not click any links in exchange for clicks by others or click the same link more than 5 times. Opt out of adf.ly ads anytime and opt in by entering the account IDs
+        We shall not be liable if your Adf.ly account will be banned due to violation of terms.</string>
+    <string name="reward_message">Video AD will be played to activate ADFLY earning on AfriRise</string>
+    <string name="default_referral_id">21012519</string>
+    <string name="earn_message">Congratulations! We have detected Adfly earning is enabled in this app. Every time you click links on this page,
+    your Adfly Ads and those of your referee will be shown, therefore, the more people you refer the more clicks you will gain. Download Adfly mobile app to monitor your earnings.
+        You are free OPT-OUT of Adfly or temporarily disable Adfly on this app (for normal usage) from the settings. In the event that the adfly fails to proceed to the destined page, refresh the page.
+    DISCLAIMER : Adfly Terms And Conditions Apply.</string>
+    <!-- FEEDS -->
+    <string name="no_feeds">Pull fetch</string>
+    <string name="error_feed_error">The feed website is unreachable.</string>
+    <string name="error_feed_process">The feed can not be processed.</string>
+    <string name="filter_apply_to_title">Apply to title</string>
+    <string name="filter_apply_to_content">Apply to content</string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
+    <string name="google_news_indicator">Select one or several topics to add. Some of them may not be provided by Google for your language.</string>
+    <string name="google_news_top_stories">Top Stories</string>
+    <string name="google_news_world">World</string>
+    <string name="google_news_business">Business</string>
+    <string name="google_news_technology">Technology</string>
+    <string name="google_news_entertainment">Entertainment</string>
+    <string name="google_news_sports">Sports</string>
+    <string name="google_news_science">Science</string>
+    <string name="google_news_health">Health</string>
+    <string name="google_news_custom_topic">Enter custom topic</string>
+
+    <!-- ENTRIES -->
+    <string name="all_entries">All feeds</string>
+    <string name="favorites">Starred</string>
+    <string name="context_menu_share_starred">Share starred feeds</string>
+    <string name="menu_star">Star</string>
+    <string name="menu_unstar">Unstar</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_full_screen">Full screen</string>
+    <string name="menu_copy_clipboard">Copy link</string>
+    <string name="menu_mark_as_unread">Mark as unread</string>
+    <string name="share_favorites_title">AfriRise: starred feeds</string>
+    <string name="copied_clipboard">Link copied</string>
+    <string name="get_full_text">Show more</string>
+    <string name="original_text">Show less</string>
+    <string name="see_enclosure">Visit page</string>
+    <string name="see_link">Visit page</string>
+    <string name="open_enclosure">Open enclosure</string>
+    <string name="file">File</string>
+    <string name="download_and_save">Download and save</string>
+    <string name="open_link">Open link</string>
+    <string name="tip_sentence">Tip: slide left to mark as read and slide right to mark as favorite</string>
+    <string name="undo">Undo</string>
+    <string name="marked_as_read">Marked as read</string>
+
+    <!-- WIDGET -->
+
+    <!-- SETTINGS -->
+    <string name="settings_category_refresh">Automated refresh</string>
+    <string name="settings_refresh_enabled">Enable automatic refresh</string>
+    <string name="settings_refresh_enabled_description">Enable the automatic refresh of feeds</string>
+    <string name="settings_refresh_interval">Refresh interval</string>
+    <string name="settings_category_notifications">Notifications</string>
+    <string name="settings_notifications_enabled">Enable notifications</string>
+    <string name="settings_notifications_enabled_description">Enable notifications in case of new feeds</string>
+    <string name="settings_notifications_ringtone">Ringtone</string>
+    <string name="settings_notifications_ringtone_none">None</string>
+    <string name="settings_notifications_vibrate">Vibrate</string>
+    <string name="settings_notifications_vibrate_description">Enable the vibration on new feeds</string>
+    <string name="settings_notifications_light">Light</string>
+    <string name="settings_notifications_light_description">Enable notification light on new feeds</string>
+    <string name="settings_category_content_presentation">Content presentation</string>
+    <string name="settings_light_theme">Light theme</string>
+    <string name="settings_light_theme_description">Use the light theme</string>
+    <string name="settings_keep_time">Time that the feeds will be kept</string>
+    <string name="settings_display_images">Display images</string>
+    <string name="settings_display_images_description">Display images in feeds</string>
+    <string name="settings_preload_image_mode">Preload images</string>
+    <string name="settings_font_size">Text size</string>
+    <string name="settings_display_oldest_first">Feeds order</string>
+    <string name="settings_display_oldest_first_description">Display oldest feeds first</string>
+    <string name="settings_display_entries_fullscreen">Auto-fullscreen feeds</string>
+    <string name="settings_display_entries_fullscreen_description">Automatically display feeds in fullscreen</string>
+    <string name="settings_refresh_on_open">Refresh feeds on open</string>
+    <string name="settings_refresh_on_open_description">Refreshes all feeds after opening the application</string>
+    <string name="settings_refresh_wifi_only">Refresh only over Wi-Fi</string>
+    <string name="settings_refresh_wifi_only_description">Automatic refresh will only be done if Wi-Fi connection is available</string>
+
+    <plurals name="number_of_new_entries">
+        <item quantity="one">One new feed</item>
+        <item quantity="other">%d new feeds</item>
+    </plurals>
+
+    <string-array name="settings_intervals">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
+    <string-array name="settings_keep_times">
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>4 days</item>
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="settings_font_sizes">
+        <item>-2</item>
+        <item>-1</item>
+        <item>Standard</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="settings_preload_image_modes">
+        <item>Never</item>
+        <item>Only over Wi-Fi</item>
+        <item>Always</item>
+    </string-array>
+
+    <!-- Interstitial ad id. Insert your own interstitial id, you can get interstitial id via admob. -->
+
+      <string name="banner_ad_unit_id">ca-app-pub-4187523739246184/8401396056</string>
+      <!-- Interstitial ad id. Insert your own interstitial id, you can get interstitial id via admob. -->
+    <string name="rewarded_ad_unit_id">ca-app-pub-4187523739246184/4270579357</string>
+      <string name="interstitial_ad_unit_id">ca-app-pub-4187523739246184/7659160028</string>
+      <string name="app_id">ca-app-pub-4187523739246184~3892123645</string>
+
+
+    <!--Test Ads-->
+   <!-- <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    &lt;!&ndash; Interstitial ad id. Insert your own interstitial id, you can get interstitial id via admob. &ndash;&gt;
+    <string name="rewarded_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+
+    <!--AwesomeWebview-->
+    <string name="refresh">Refresh</string>
+    <string name="find">Find</string>
+    <string name="share_via">Share via</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="open_with">Open with</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+
+    <!--Facebook ads-->
+   <!-- <string name="fb_test_ad">IMG_16_9_APP_INSTALL#</string>-->
+    <string name="fb_test_ad"></string>
+    <!--<string name="fb_native_placement_id">534702613839386_534703697172611</string>-->
+    <string name="fb_interstitial_placement_id">3032157590137647_3041844565835616</string>
+    <string name="fb_banner_placement_id">3032157590137647_3042080212478718</string>
+    <!--<string name="fb_medium_rectangle_banner">129339711760825_129340155094114</string>
+    <string name="fb_rewarded_placement_id">256594208663631_256594758663576</string>-->
+
+
+
+
+    <!--
+    Test Ad Type 	Description 	Supported Ad Format
+
+VID_HD_16_9_46S_APP_INSTALL 16x9 HD video 46 sec ad with app install CTA option
+
+
+Interstitial, Rewarded Video, Native VID_HD_16_9_46S_LINK
+
+
+16x9 HD video 46 sec ad with link CTA option Interstitial, Rewarded Video, Native
+
+VID_HD_16_9_15S_APP_INSTALL 16x9 HD video 15 sec ad with app install CTA option
+
+
+Interstitial, Rewarded Video, Native VID_HD_16_9_15S_LINK
+
+
+16x9 HD video 15 sec ad with link CTA option Interstitial, Rewarded Video, Native
+
+VID_HD_9_16_39S_APP_INSTALL 9x16 HD video 39 sec ad with app install CTA option
+
+
+Interstitial, Rewarded Video, Native VID_HD_9_16_39S_LINK
+
+
+9x16 HD video 39 sec ad with link CTA option Interstitial, Rewarded Video, Native
+
+IMG_16_9_APP_INSTALL 16x9 image ad with app install CTA option
+
+
+Banner, Interstitial, Native IMG_16_9_LINK
+
+
+16x9 image ad with link CTA option Banner, Interstitial, Native
+
+CAROUSEL_IMG_SQUARE_APP_INSTALL carousel ad with square image and app install CTA option
+
+
+Interstitial, Native CAROUSEL_IMG_SQUARE_LINK
+
+
+carousel ad with square image and link CTA option Interstitial, Native
+    -->
+</resources>

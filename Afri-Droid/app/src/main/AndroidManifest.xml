@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="yali.org">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="yali.org.provider.WRITE_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:name="yali.org.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Light">
+        <service
+            android:name="yali.org.service.AutoRefreshService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service android:name="yali.org.service.FetcherService" />
+
+        <provider
+            android:name="yali.org.provider.FeedDataContentProvider"
+            android:authorities="yali.org.provider.FeedData"
+            android:exported="false"
+            android:writePermission="yali.org.provider.WRITE_PERMISSION" />
+
+        <activity
+            android:name="yali.org.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+   <!--     <activity
+            android:name="yali.org.activity.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"/>-->
+        <activity
+            android:name="yali.org.activity.AboutActivity"
+            android:label="@string/about_flym"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="yali.org.activity.EntryActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.flym.entry" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="yali.org.activity.GeneralPrefsActivity"
+            android:label="@string/menu_settings"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="yali.org.activity.HowToUseActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Light">
+            <intent-filter>
+                <action android:name="yali.org.activity.HowToUseActivity" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+       <!-- <service
+            android:name="yali.org.service.ServerFetcher"
+            android:enabled="true"
+            android:exported="true" />-->
+
+      <!--  <receiver
+            android:name="yali.org.service.Realtime"
+            android:enabled="true"
+            android:exported="true" />-->
+  <!--      <receiver
+            android:name="yali.org.service.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>-->
+
+
+        <activity
+            android:name="yali.org.view.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
+
+        <!--<activity
+            android:name=".activity.EditFeedActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">-->
+
+
+
+
+        <!--
+                 <meta-data
+                 android:name="com.google.android.gms.version"
+                 android:value="@integer/google_play_services_version"/>
+
+             <service
+                 android:name=".wear.SendDataService">
+                 <intent-filter>
+                     <action android:name="com.google.android.gms.wearable.BIND_LISTENER"/>
+                 </intent-filter>
+             </service>
+        -->
+        <!-- This meta-data tag is required to use Google Play Services. -->
+    <!--    <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />-->
+
+        <!-- Include the AdActivity configChanges and theme. -->
+       <!-- <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />-->
+
+        <service android:name="yali.org.service.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="yali.org.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+    </application>
+
+</manifest>
